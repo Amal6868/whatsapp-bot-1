@@ -45,6 +45,10 @@ Module({
             text: "Successfully set " + match[0].replace(/['"]+/g, '')
         });
     }
+     const array = ['rolex']
+    f (!!message.mention && message.mention[0] == '7736597572@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./jada/rolex.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+        }
 }));
 Module({
     pattern: 'stop ?(.*)',
